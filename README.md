@@ -1,14 +1,10 @@
 # 🗄️ Criando uma Instância de Banco de Dados no Azure
 
-Este repositório foi criado como parte de um desafio prático na DIO, com o objetivo de documentar a criação de uma instância de banco de dados na plataforma Microsoft Azure. Aqui você vai encontrar os principais passos, dicas e imagens do processo, para ajudar nos seus estudos ou futuras implementações. 🚀
+Este repositório foi criado como parte de um desafio prático na DIO, com o objetivo de documentar a criação de uma instância de banco de dados na plataforma Microsoft Azure.
 
 ## 🎯 Objetivo
 
-Praticar a criação de uma instância gerenciada de banco de dados no Azure, com foco em:
-
-- Compreender as etapas da configuração
-- Documentar o processo de forma clara
-- Consolidar conhecimentos sobre o uso da Azure
+Praticar a criação de uma instância gerenciada de banco de dados no Azure, compreendendo as etapas de configuração.
 
 ## 🧭 Passo a Passo
 
@@ -16,7 +12,7 @@ Praticar a criação de uma instância gerenciada de banco de dados no Azure, co
 
 Acesse [https://portal.azure.com](https://portal.azure.com) e entre na sua conta.
 
-![Portal Azure](images/portal-db.png)
+![image](https://github.com/user-attachments/assets/2f716468-875d-4184-b0cb-274bc3271726)
 
 ---
 
@@ -29,9 +25,9 @@ Clique em **"Criar um recurso"** → **"Banco de dados"** → Escolha a opção 
 - **Grupo de recursos**: crie um novo ou use um existente
 - **Nome do servidor**: ex: `meuservidor-sql`
 - **Login do administrador**: `adminuser`
-- **Senha segura**: algo forte, contendo letras, números e símbolos
+- **Senha segura**: contendo letras, números e símbolos
 
-![Configuração SQL](images/sql-config.png)
+![image](https://github.com/user-attachments/assets/af29a78c-3e74-40fd-9a51-c08f852b7bf4)
 
 ---
 
@@ -43,7 +39,7 @@ Permita acesso a seu IP atual para conseguir se conectar à instância pelo SSMS
 
 ### 5. Criar banco de dados
 
-Configure o nome do banco de dados e selecione um plano de uso (idealmente gratuito ou com baixo custo para testes).
+Configure o nome do banco de dados e selecione um plano de uso.
 
 ---
 
@@ -62,23 +58,6 @@ Banco de dados: meudb
 ---
 
 ## 💡 Dicas
-
-- Use nomes fáceis de lembrar e identificar
+- Nunca exponha suas credenciais em um ambiente público
 - Habilite acesso ao IP corretamente ou você não conseguirá se conectar
-- Monitore o uso gratuito para evitar cobranças
-
----
-
-## 📂 Estrutura do Projeto
-
-```
-📦 azure-db-lab/
-├── README.md
-├── images/
-│   ├── portal-db.png
-│   └── sql-config.png
-```
-
----
-
-Com isso, você conclui mais um passo rumo à sua especialização em nuvem. Salve esse repositório, compartilhe com colegas e continue praticando! ☁️🧠
+- Monitore o uso gratuito para evitar cobranças indesejadas
